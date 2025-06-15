@@ -33,7 +33,7 @@ one()
 // }
 // chai()
 
-const chai = () => {  
+const chai = () => {  //function (not object)
 
     let username = "hitesh"
     console.log(this);  // Arrow functions inherit `this` from their defining scope; at module top-level in Node.js, `this` is `{}`, not `global`
