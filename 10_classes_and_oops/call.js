@@ -19,7 +19,7 @@ function createUser(username, email, password){
     //actually after running SetUsername() func, its execution context of the functions gets removed from call stack , so all variables declareed inside it, also gets removed
 
     //so
-    SetUsername.call(this, username)        //Run SetUsername(username) — but bind this to whatever this is right now in createUser.
+    SetUsername.call(this, username)        //Runs SetUsername(username) — but bind this to whatever this is right now in createUser.
 
     //Example:
     // If you just say: "Write 'Devansh'" → They might write it in their own notebook.
