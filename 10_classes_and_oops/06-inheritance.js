@@ -9,7 +9,9 @@ class User{
 
 class Teacher extends User{
     constructor(username, email,password){
-        super(username)
+        // super(username)   //same as User.call(this, username)
+            
+        //withOut super(..), we cant use 'this' keyword
         this.email = email
         this.password = password
     }

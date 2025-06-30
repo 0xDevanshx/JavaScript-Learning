@@ -17,7 +17,7 @@
             //requirements
             document
                 .querySelector('button')
-                .addEventListener('click', this.handleClick.bind(this))     //.bind(this) forces this inside handleClick() to always refer to the class instance (i.e., the React object), no matter who calls it.
+                .addEventListener('click', this.handleClick.bind(this))     //.bind(this) forces 'this' inside handleClick() to always refer to the class instance (i.e., the React object), no matter who calls it.
 
                 // In JavaScript:
                     // When you pass a regular function (like this.handleClick) as a callback, it loses its original this context.
